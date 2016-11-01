@@ -275,14 +275,16 @@ import java.util.Random;
     }
     
 /**
- * @TODO: Fix me
+ * Date: Oct 30, 2016
+ * Limits this vector to a maximum value
  * @param max 
  */
     public void limit (double max)
     {
         if (this.mag() > max)
         {
-            
+            this.normalize();
+            this.scalarMult(max);
         }
     }
 

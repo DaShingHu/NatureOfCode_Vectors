@@ -21,7 +21,7 @@ import java.awt.Graphics;
  * paintBall(Graphics g): Paints the ball
  */
 public class Ball {
-    private final Mover ballMover;
+    public final Mover ballMover;
     private final int radius;
     
     /**
@@ -63,6 +63,7 @@ public class Ball {
      */
     public void update()
     {
+        this.ballMover.velocity.limit(10);
         this.ballMover.update();
     }
 
