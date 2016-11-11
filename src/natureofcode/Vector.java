@@ -243,7 +243,7 @@ import java.util.Random;
     
     /**
      * Date: Oct 29, 2016
-     * @return: Return the heading of the vector; relative to x axis
+     * @return: Return the heading of the vector; relative to x axis in radians
      */
     public double heading()
     {

@@ -6,15 +6,11 @@
 
  */
 package natureofcode;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
 import javax.swing.Timer;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-
 /**
  *
  * @author Dustin Hu
@@ -44,7 +40,7 @@ public class NatureOfCode {
         frame.setSize(800, 800);
         frame.setVisible(true);
         
-        Timer time = new Timer(30, new ActionListener()
+        Timer time = new Timer(50, new ActionListener()
         {
             public void actionPerformed(ActionEvent evt)
             {

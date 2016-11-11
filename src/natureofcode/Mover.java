@@ -110,7 +110,7 @@ public class Mover {
     /**
      * Date: Oct 29, 2016
      * Copies the mover into a new Mover object
-     * @return: A copy of this mover
+     * @return : A copy of this mover
      */
     public Mover copy()
     {
@@ -128,13 +128,15 @@ public class Mover {
         if (location.getX() > 800 || location.getX() < 0)
         {
             this.velocity.setX(-1 * this.velocity.getX());
-            this.acceleration.randomizeSelf();
+            this.acceleration.setX(-1 * this.acceleration.getX());
+//            this.acceleration.randomizeSelf();
         }
 
         if (location.getY() > 800 || location.getY() < 0)
         {
             this.velocity.setY(-1 * this.velocity.getY());
-            this.acceleration.randomizeSelf();
+            this.acceleration.setY(-1 * this.acceleration.getY());
+//            this.acceleration.randomizeSelf();
         }
     }
     

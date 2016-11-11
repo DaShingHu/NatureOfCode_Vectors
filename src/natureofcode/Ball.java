@@ -63,7 +63,8 @@ public class Ball {
      */
     public void update()
     {
-        this.ballMover.velocity.limit(10);
+        this.ballMover.velocity.limit(1);
+        this.ballMover.acceleration.limit(10);
         this.ballMover.update();
     }
 
